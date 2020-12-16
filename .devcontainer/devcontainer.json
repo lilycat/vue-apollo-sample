@@ -1,12 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.140.1/containers/typescript-node
 {
-	"name": "Node.js & TypeScript",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 10, 12, 14
-		"args": { "VARIANT": "12" }
-	},
+	"service": "node",
+	"workspaceFolder": "/app",
+	// "build": {
+	// 	"dockerfile": "Dockerfile",
+	// 	// Update 'VARIANT' to pick a Node version: 10, 12, 14
+	// 	"args": { "VARIANT": "12" }
+	// },
+	"dockerComposeFile": "../docker-compose.yml",
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
